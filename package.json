@@ -1,0 +1,22 @@
+{
+  "name": "apicalllearning",
+  "version": "1.0.0",
+  "description": "to learn api calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "myTypeScriptWorks"
+  },
+  "keywords": [
+    "apiCalls"
+  ],
+  "author": "velaytham rajendran",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "express": "^5.1.0"
+  }
+}
