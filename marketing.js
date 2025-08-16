@@ -9,8 +9,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Welcome to the API server');
-}
-);
+});
 
 // Serve los.html for GET /services
 app.get('/services', (req, res) => {
@@ -18,11 +17,83 @@ app.get('/services', (req, res) => {
 });
 
 app.get('/services/brandfilms', (req, res)=> {
-    const index = constants.BRAND_FILMS;
-    res.send(constants)
-/*     const brandFilms = los.services[0]
-    res.set('Content-Type', 'application/json');
-    res.send(JSON.stringify(brandFilms, null, 2)); */
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.BRAND_FILMS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/corporatefilms', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.CORPORATE_FILMS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/productvideos', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.PRODUCT_VIDEOS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/explainervideos', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.EXPLAINER_VIDEOS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/socialmediacontent', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.SOCIAL_MEDIA_CONTENT];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/eventcoverage', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.EVENT_COVERAGE];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/testimoialvideos', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.TESTIMONIAL_VIDEOS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/trainingvideos', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.TRAINING_VIDEOS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/animationandmotiongraphics', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.ANIMATION_AND_MOTION_GRAPHICS];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
+})
+
+app.get('/services/dronevideography', (req, res)=> {
+    res.set('Content-Type', 'application/json')
+    // res.send(JSON.stringify(los.services[constants.serviceIds.BRAND_FILMS], null, 2))
+    const fullData = los.services[constants.serviceIds.DRONE_VIDEOGRAPHY];
+    const {id, ...filteredData} = fullData;
+    res.send(JSON.stringify(filteredData, null,2))
 })
 
 app.listen(PORT, ()=>{

@@ -1,4 +1,4 @@
-const constants = {
+export const serviceIds = {
   "BRAND_FILMS": 0,
   "CORPORATE_FILMS": "1",
   "PRODUCT_VIDEOS": "2",
