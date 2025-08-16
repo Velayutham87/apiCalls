@@ -1,0 +1,73 @@
+{
+    "services":[{
+        "name": "Brand Films",
+        "description": "High-quality films that tell your brand's story.",
+        "price": 1500,
+        "currency": "USD",
+        "duration": "3-5 minutes",
+        "id": 1
+    },{
+        "name": "Corporate Films",
+        "description": "Professional videos for corporate communications.",
+        "price": 1200,
+        "currency": "USD",
+        "duration": "2-4 minutes",
+        "id": 2
+    },{
+        "name": "Product Videos",
+        "description": "Showcase your products with engaging videos.",
+        "price": 800,
+        "currency": "USD",
+        "duration": "1-2 minutes",
+        "id": 3
+    },{
+        "name": "Explainer Videos",
+        "description": "Clear and concise videos that explain your services or products.",
+        "price": 1000,
+        "currency": "USD",
+        "duration": "1-3 minutes",
+        "id": 4
+    },{
+        "name": "Social Media Content",
+        "description": "Short, engaging videos tailored for social media platforms.",
+        "price": 600,
+        "currency": "USD",
+        "duration": "30-60 seconds",
+        "id": 5
+    },{
+        "name": "Event Coverage",
+        "description": "Capture the essence of your events with professional videography.",
+        "price": 2000,
+        "currency": "USD",
+        "duration": "Varies",
+        "id": 6
+    },{
+        "name": "Testimonial Videos",
+        "description": "Authentic testimonials from your satisfied customers.",
+        "price": 700,
+        "currency": "USD",
+        "duration": "1-2 minutes",
+        "id": 7
+    },{
+        "name": "Training Videos",
+        "description": "Educational videos for training and development.",
+        "price": 900,
+        "currency": "USD",
+        "duration": "2-5 minutes",
+        "id": 8
+    },{
+        "name": "Animation and Motion Graphics",
+        "description": "Creative animations and graphics to enhance your message.",
+        "price": 1100,  
+        "currency": "USD",
+        "duration": "1-3 minutes",  
+        "id": 9
+    },{
+        "name": "Drone Videography",
+        "description": "Aerial footage to provide a unique perspective on your projects.",
+        "price": 1300,
+        "currency": "USD",
+        "duration": "Varies",
+        "id": 10
+    }]
+}

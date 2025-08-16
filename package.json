@@ -4,6 +4,7 @@
   "description": "to learn api calls",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon marketing.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
   }
 }
