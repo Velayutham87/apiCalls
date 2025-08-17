@@ -8,7 +8,7 @@ const constants = require('./constants.js');
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the API server');
+    res.send('Welcome to The Old Marketing Company');
 });
 
 // Serve los.html for GET /services
